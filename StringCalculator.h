@@ -8,6 +8,6 @@ bool isEmptyString(const char* value){
 
 int isLessThanThousand(const char *value){    
     int sum = 0;
-    int input = atoi(val); // string to int
+    int input = atoi(value); // string to int
     return input < 1000 ? sum += input : 0+sum;
 }
