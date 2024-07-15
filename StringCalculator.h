@@ -3,7 +3,7 @@
 
 //Check is String Empty or Null  
 bool isEmptyString(const char* value){
-    return (value == NULL || value[0] == '\0);
+    return (value == NULL || value[0] == '\0');
 }
 
 int isLessThanThousand(const char *value){    
