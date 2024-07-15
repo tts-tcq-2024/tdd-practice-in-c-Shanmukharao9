@@ -1,11 +1,13 @@
-boolean isEmptyString(const char* input){
-if (input == NULL || input[0] == '\0') {
-        return TRUE; // The string is empty
-    }
-        return FALSE;
+#include <string.h>
+#include<stdlib.h>
+
+//Check is String Empty or Null  
+bool isEmptyString(const char* value){
+    return (value == NULL || value[0] == '\0')? TRUE : FALSE;
 }
-int add(const char* input){
-        if(isEmptyString(input){ return 0;}
-        if given input contains single number which is < 1000 and unsigned with no delimiters then return same number
-  return -1;
+
+int isLessThanThousand(const char *value){    
+    int sum = 0;
+    int input = atoi(val); // string to int
+    return input < 1000 ? sum += input : 0+sum;
 }
