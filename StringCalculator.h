@@ -9,15 +9,15 @@ bool isEmptyString(const char* value){
 int isLessThanThousand(const char *value){    
     int sum = 0;
     int input = atoi(value); // string to int
-    return input < 1000 ? sum += input : 0+sum;
+    return input < 1000 && input > 0 ? sum += input : sum;
 }
 
 int calculateSum(const char* input, char* delimiter)
 {
     int sum = 0;
-    char* duplicate_input = NULL;
-    duplicate_input = strdup (input); // duplicate the string 
-    char* token = strtok(duplicate_input, delimiter); //tokenizing strings
+    char* Duplicate_inp = NULL;
+    Duplicate_inp = strdup (input); // duplicate the string 
+    char* token = strtok(Duplicate_inp, delimiter); //tokenizing strings
     while(token != NULL)
     {
         isLessThanThousand(token);
