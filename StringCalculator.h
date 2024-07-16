@@ -9,7 +9,7 @@ bool isEmptyString(const char* value){
 int isLessThanThousand(const char *value){    
     int sum = 0;
     int input = atoi(value); // string to int
-    return input < 1000 && input > 0 ? 0;
+    return input < 1000 && input > 0 ? sum += input : 0;
 }
 
 int calculateSum(const char* input, char* delimiter)
